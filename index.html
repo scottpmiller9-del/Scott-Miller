@@ -3,132 +3,154 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Scott Miller | Marketing Executive</title>
-<meta name="description" content="Scott Miller is a marketing executive with 10+ years in growth, paid media, lifecycle, and GTM operations. Open to Director and VP marketing roles.">
+<title>Scott Miller | Marketing Executive, Growth and GTM</title>
+<meta name="description" content="Scott Miller, marketing executive. 10+ years in growth, paid media, lifecycle, and GTM operations. Open to Director and VP of Marketing roles, remote.">
 <meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Scott Miller | Marketing Executive">
+<meta property="og:description" content="Marketing that shows up in revenue. 8:1 ROAS across 30+ paid accounts, +9% ARR from a pricing initiative, 26x enrollment growth.">
+<meta property="og:url" content="https://scottpatrickmiller.netlify.app/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0a2540">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23635bff'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-weight='700' font-size='28' fill='white'%3ESM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --navy:#0a2540; --slate:#425466; --muted:#6b7c93; --line:#e3e8ee;
-  --bg:#ffffff; --soft:#f6f9fc; --brand:#635bff; --brand-dk:#4b44e0; --cyan:#00d4ff;
-  --card:#ffffff; --shadow:0 2px 5px -1px rgba(50,50,93,.15),0 1px 3px -1px rgba(0,0,0,.2);
+  --bg:#ffffff; --soft:#f6f9fc; --brand:#635bff; --cyan:#00d4ff;
+  --shadow:0 2px 5px -1px rgba(50,50,93,.15),0 1px 3px -1px rgba(0,0,0,.2);
   --shadow-lg:0 30px 60px -12px rgba(50,50,93,.25),0 18px 36px -18px rgba(0,0,0,.3);
+  --sec:72px;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--slate);font:400 17px/1.65 Inter,system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--slate);font:400 17px/1.6 Inter,system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
 h1,h2,h3{color:var(--navy);margin:0;letter-spacing:-.02em}
+p{margin:0}
 a{color:var(--brand);text-decoration:none}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:6px}
 .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-.eyebrow{font:600 15px/1 Inter,sans-serif;color:var(--brand);margin:0 0 16px}
-.lead{font-size:19px;max-width:620px}
+.eyebrow{font:600 14px/1 Inter,sans-serif;color:var(--brand);margin:0 0 14px;letter-spacing:.01em}
 
 /* nav */
-nav{position:absolute;top:0;left:0;right:0;z-index:5}
-nav .wrap{display:flex;justify-content:space-between;align-items:center;height:72px}
-.logo{font:700 18px/1 Inter,sans-serif;color:#fff;letter-spacing:-.01em}
-.links{display:flex;gap:28px;align-items:center}
-.links a{color:#fff;font-weight:500;font-size:15px;opacity:.92}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;transition:background .2s,box-shadow .2s}
+nav.solid{background:rgba(255,255,255,.92);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font:700 17px/1 Inter,sans-serif;color:#fff}
+.links{display:flex;gap:26px;align-items:center}
+.links a{color:#fff;font-weight:500;font-size:15px;opacity:.9}
 .links a:hover{opacity:1}
-.pill{background:rgba(255,255,255,.2);padding:8px 16px;border-radius:999px;backdrop-filter:blur(6px)}
-@media(max-width:720px){.links a:not(.pill){display:none}}
+.pill{background:rgba(255,255,255,.2);padding:8px 16px;border-radius:999px}
+nav.solid .logo,nav.solid .links a{color:var(--navy)}
+nav.solid .pill{background:var(--navy);color:#fff!important}
+@media(max-width:760px){.links a:not(.pill){display:none}}
 
 /* hero */
-.hero{position:relative;overflow:hidden;padding:150px 0 140px;background:var(--navy)}
+.hero{position:relative;overflow:hidden;padding:128px 0 120px;background:var(--navy)}
 .hero::before{content:"";position:absolute;inset:-40% -10% 20% -10%;
   background:
    radial-gradient(40% 50% at 15% 30%,#ff7a59 0,transparent 70%),
    radial-gradient(45% 55% at 45% 10%,#a960ee 0,transparent 70%),
    radial-gradient(45% 55% at 80% 30%,#635bff 0,transparent 70%),
    radial-gradient(40% 50% at 95% 70%,#00d4ff 0,transparent 70%);
-  transform:skewY(-12deg);filter:saturate(1.1);opacity:.95}
-.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:160px;background:var(--bg);transform:skewY(-6deg);transform-origin:100% 0}
+  transform:skewY(-12deg);opacity:.95}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:140px;background:var(--bg);transform:skewY(-6deg);transform-origin:100% 0}
 .hero .wrap{position:relative;z-index:2}
-.hero h1{color:#fff;font-size:clamp(42px,7vw,78px);line-height:1.04;font-weight:700;max-width:820px;letter-spacing:-.035em}
-.hero p{color:rgba(255,255,255,.88);font-size:clamp(18px,2.2vw,21px);max-width:560px;margin:24px 0 36px}
 .hero .eyebrow{color:#fff;opacity:.85}
-.btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:6px;padding:11px 20px;border-radius:999px;font:600 15px/1 Inter,sans-serif;transition:background .15s}
+.hero h1{color:#fff;font-size:clamp(40px,6.6vw,74px);line-height:1.04;font-weight:700;max-width:780px;letter-spacing:-.035em}
+.hero .bio{color:rgba(255,255,255,.9);font-size:clamp(17px,2vw,20px);max-width:580px;margin:20px 0 30px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:11px 20px;border-radius:999px;font:600 15px/1 Inter,sans-serif;transition:background .15s,border-color .15s}
 .btn.primary{background:var(--navy);color:#fff}
 .hero .btn.primary{background:#fff;color:var(--navy)}
 .btn.primary:hover{background:var(--brand);color:#fff}
 .btn.ghost{color:#fff}
 .btn.ghost:hover{opacity:.8}
-.btn .arr{transition:transform .15s}
+.btn.line{border:1px solid var(--line);color:var(--navy)}
+.btn.line:hover{border-color:var(--navy)}
+.arr{transition:transform .15s}
 .btn:hover .arr{transform:translateX(3px)}
 
-/* sections */
-section{padding:96px 0}
-section.soft{background:var(--soft)}
-h2{font-size:clamp(30px,4.2vw,44px);line-height:1.12;font-weight:700;max-width:720px;margin-bottom:20px}
-.grid{display:grid;gap:24px}
-@media(min-width:760px){.g2{grid-template-columns:1fr 1fr}.g4{grid-template-columns:repeat(4,1fr)}}
+/* proof band */
+.stats{margin-top:-52px;position:relative;z-index:3}
+.statcard{background:#fff;border-radius:12px;box-shadow:var(--shadow-lg);display:grid;grid-template-columns:repeat(2,1fr)}
+.stat{padding:22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat:nth-child(2n){border-right:0}
+.stat:nth-child(n+3){border-bottom:0}
+@media(min-width:760px){.statcard{grid-template-columns:repeat(4,1fr)}.stat{padding:26px 24px;border-bottom:0;border-right:1px solid var(--line)}.stat:nth-child(2n){border-right:1px solid var(--line)}.stat:last-child{border-right:0}}
+.stat b{display:block;font-size:32px;line-height:1.1;color:var(--navy);font-weight:700;letter-spacing:-.03em}
+.stat span{display:block;margin-top:4px;font-size:14px;line-height:1.4;color:var(--muted)}
 
-/* stats band */
-.stats{margin-top:-60px;position:relative;z-index:3}
-.statcard{background:var(--card);border-radius:12px;box-shadow:var(--shadow-lg);display:grid;grid-template-columns:repeat(2,1fr)}
-@media(min-width:760px){.statcard{grid-template-columns:repeat(4,1fr)}}
-.stat{padding:28px 26px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
-@media(min-width:760px){.stat{border-bottom:0}.stat:last-child{border-right:0}}
-.stat b{display:block;font-size:34px;line-height:1.1;color:var(--navy);font-weight:700;letter-spacing:-.03em}
-.stat span{font-size:14px;color:var(--muted)}
+/* sections */
+section{padding:var(--sec) 0}
+section.soft{background:var(--soft)}
+@media(max-width:760px){:root{--sec:56px}}
+h2{font-size:clamp(28px,3.8vw,40px);line-height:1.12;font-weight:700;max-width:700px;margin-bottom:14px}
+.grid{display:grid;gap:20px}
+@media(min-width:760px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}}
 
 /* problem */
 .problem p{max-width:640px}
-.problem .quote{border-left:3px solid var(--brand);padding-left:20px;color:var(--navy);font-size:20px;font-weight:500;margin-top:28px}
+.quote{border-left:3px solid var(--brand);padding-left:18px;color:var(--navy);font-size:19px;font-weight:500;margin-top:22px;max-width:640px}
 
 /* plan */
-.step{position:relative;padding-top:20px;border-top:2px solid var(--line)}
-.step .n{font:600 13px/1 Inter;color:var(--brand);letter-spacing:.06em}
-.step h3{font-size:19px;margin:10px 0 6px}
-.step p{margin:0;font-size:16px}
+.steps{margin-top:32px}
+.step{padding-top:16px;border-top:2px solid var(--line)}
+.step .n{font:600 13px/1 Inter,sans-serif;color:var(--brand);letter-spacing:.06em}
+.step h3{font-size:18px;margin:8px 0 4px}
+.step p{font-size:15.5px}
 
 /* wins */
-.win{background:var(--card);border-radius:10px;box-shadow:var(--shadow);padding:30px;display:flex;flex-direction:column}
-.win .co{font:600 13px/1 Inter;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
-.win .big{font-size:42px;font-weight:700;color:var(--navy);letter-spacing:-.03em;margin:14px 0 2px;line-height:1}
-.win .bigl{font-size:15px;color:var(--brand);font-weight:600}
-.win p{margin:14px 0 0;font-size:16px}
+.wins{margin-top:32px}
+.win{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
+.win:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.win .co{font:600 12px/1.3 Inter,sans-serif;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.win .big{font-size:36px;font-weight:700;color:var(--navy);letter-spacing:-.03em;margin:12px 0 0;line-height:1}
+.win .bigl{font-size:14.5px;color:var(--brand);font-weight:600;margin-top:6px}
+.win p{margin-top:12px;font-size:15.5px;line-height:1.55}
 
 /* experience */
-.role{display:grid;gap:4px 32px;padding:24px 0;border-top:1px solid var(--line)}
-@media(min-width:760px){.role{grid-template-columns:200px 1fr}}
-.role .yr{font-size:15px;color:var(--muted);font-variant-numeric:tabular-nums}
-.role h3{font-size:18px}
-.role .org{color:var(--brand);font-weight:600;font-size:15px}
-.role p{margin:6px 0 0;font-size:16px}
+.roles{margin-top:24px}
+.role{display:grid;gap:2px 32px;padding:16px 0;border-top:1px solid var(--line)}
+.role:last-child{border-bottom:1px solid var(--line)}
+@media(min-width:760px){.role{grid-template-columns:170px 1fr;align-items:baseline}}
+.yr{font-size:14.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.role h3{font-size:17px;display:inline}
+.org{color:var(--brand);font-weight:600;font-size:15px;margin-left:8px}
+.role p{margin-top:2px;font-size:15.5px}
 
 /* fit */
-.fitbox{background:var(--navy);border-radius:14px;padding:44px;color:rgba(255,255,255,.82)}
+.fitbox{background:var(--navy);border-radius:16px;padding:40px;color:rgba(255,255,255,.85)}
 .fitbox h2{color:#fff}
-.fitbox h3{color:#fff;font-size:15px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;opacity:.7}
+.fitbox .lede{max-width:620px;margin:0 0 30px}
+.fitbox h3{color:#fff;font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;opacity:.7}
 .tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
-.tags li{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#fff;padding:7px 13px;border-radius:999px;font-size:14px}
-@media(max-width:600px){.fitbox{padding:28px}}
+.tags li{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#fff;padding:6px 12px;border-radius:999px;font-size:14px}
+@media(max-width:600px){.fitbox{padding:26px}}
 
 /* cta */
 .cta{text-align:center}
-.cta h2{margin:0 auto 16px}
-.cta p{margin:0 auto 32px;max-width:520px}
+.cta h2{margin:0 auto 12px}
+.cta p{margin:0 auto 26px;max-width:500px}
 .cta .btns{justify-content:center}
-.btn.line{border:1px solid var(--line);color:var(--navy)}
-.btn.line:hover{border-color:var(--navy)}
 
-footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:14px;color:var(--muted)}
-footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer{border-top:1px solid var(--line);padding:24px 0 36px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 </style>
 </head>
 <body>
 
-<nav>
+<nav id="nav">
   <div class="wrap">
     <a class="logo" href="#top">Scott Miller</a>
     <div class="links">
       <a href="#wins">Results</a>
       <a href="#experience">Experience</a>
       <a href="#fit">What I'm looking for</a>
+      <a href="https://www.linkedin.com/in/scottpatrickmiller/" target="_blank" rel="noopener">LinkedIn</a>
       <a class="pill" href="#contact">Contact</a>
     </div>
   </div>
@@ -136,9 +158,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 <header class="hero" id="top">
   <div class="wrap">
-    <p class="eyebrow">Marketing Executive</p>
+    <p class="eyebrow">Marketing Executive &middot; Growth, Paid Media, GTM</p>
     <h1>Marketing that shows up in revenue.</h1>
-    <p>I help growing companies turn marketing spend into pipeline, sales, and ARR. 10+ years leading growth, paid media, lifecycle, and GTM operations.</p>
+    <p class="bio">I'm Scott Miller, VP of GTM Operations at Rocketship. I help growing companies turn marketing spend into pipeline, sales, and ARR, and I show the math. 10+ years across agency, in-house, and my own fractional practice.</p>
     <div class="btns">
       <a class="btn primary" href="#contact">Start a conversation <span class="arr">&rsaquo;</span></a>
       <a class="btn ghost" href="#wins">See results <span class="arr">&rsaquo;</span></a>
@@ -146,7 +168,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   </div>
 </header>
 
-<div class="wrap stats">
+<div class="wrap stats" aria-label="Headline results">
   <div class="statcard">
     <div class="stat"><b>8:1</b><span>ROAS across 30+ paid accounts</span></div>
     <div class="stat"><b>$2.8M</b><span>sales from $350K in PPC</span></div>
@@ -168,7 +190,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   <div class="wrap">
     <p class="eyebrow">How I work</p>
     <h2>A clear plan, tied to numbers the CFO cares about.</h2>
-    <div class="grid g4" style="margin-top:40px">
+    <div class="grid g4 steps">
       <div class="step"><span class="n">01</span><h3>Audit</h3><p>Find where spend leaks and where pipeline actually comes from.</p></div>
       <div class="step"><span class="n">02</span><h3>Align</h3><p>Agree on goals with sales and leadership. One scoreboard.</p></div>
       <div class="step"><span class="n">03</span><h3>Build</h3><p>Fix the funnel, launch the programs, automate the busywork.</p></div>
@@ -181,30 +203,18 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   <div class="wrap">
     <p class="eyebrow">Results</p>
     <h2>Selected wins.</h2>
-    <div class="grid g2" style="margin-top:40px">
+    <div class="grid g3 wins">
       <div class="win">
         <span class="co">Rocketship &middot; Paid media</span>
-        <div class="big">8:1 ROAS</div>
-        <span class="bigl">26% lower CPA &middot; 7.51% conversion rate</span>
-        <p>Managed 30+ paid media accounts and an $800K budget over 18 months.</p>
+        <div class="big">&minus;26% CPA</div>
+        <span class="bigl">7.51% conversion rate</span>
+        <p>Ran 30+ paid media accounts and an $800K budget over 18 months at an 8:1 ROAS.</p>
       </div>
       <div class="win">
         <span class="co">Rocketship &middot; Pricing</span>
-        <div class="big">+9% ARR</div>
-        <span class="bigl">Company-wide price increase</span>
-        <p>Led the pricing initiative as VP of Growth. Also grew qualified lead volume 15%.</p>
-      </div>
-      <div class="win">
-        <span class="co">Concordia Supply &middot; Ecommerce</span>
-        <div class="big">$2.8M</div>
-        <span class="bigl">in sales from $350K in Google and Amazon PPC</span>
-        <p>Ran 12 million emails a year, adding $2.2M in YoY revenue. Raised site conversion 1.5% and revenue 15%.</p>
-      </div>
-      <div class="win">
-        <span class="co">Inspire Charter Schools &middot; Growth</span>
-        <div class="big">500 &rarr; 13,000</div>
-        <span class="bigl">students in 2.5 years</span>
-        <p>Ran the full marketing department: advertising, website, brand, events, and recruiting.</p>
+        <div class="big">+15%</div>
+        <span class="bigl">qualified lead volume</span>
+        <p>As VP of Growth, led a company-wide pricing initiative that added 9% to ARR.</p>
       </div>
       <div class="win">
         <span class="co">Rocketship &middot; Client growth</span>
@@ -213,10 +223,22 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <p>Led HubSpot CRM enablement and inbound lead generation for the full client base.</p>
       </div>
       <div class="win">
+        <span class="co">Concordia Supply &middot; Ecommerce</span>
+        <div class="big">$2.2M</div>
+        <span class="bigl">YoY revenue added by email</span>
+        <p>Ran 12 million emails a year. Turned $350K in Google and Amazon PPC into $2.8M in sales. Raised site conversion 1.5% and revenue 15%.</p>
+      </div>
+      <div class="win">
+        <span class="co">Inspire Charter Schools &middot; Growth</span>
+        <div class="big">500 &rarr; 13,000</div>
+        <span class="bigl">students enrolled</span>
+        <p>Ran the full marketing department: advertising, website, brand, events, and recruiting.</p>
+      </div>
+      <div class="win">
         <span class="co">AI operations</span>
         <div class="big">10+ hrs</div>
         <span class="bigl">saved every week</span>
-        <p>Built AI workflows that handle reporting, content QA, and ops. Now leading AI automation and training at Rocketship.</p>
+        <p>Built AI workflows for reporting, content QA, and ops. Now leading AI automation and training at Rocketship.</p>
       </div>
     </div>
   </div>
@@ -226,14 +248,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   <div class="wrap">
     <p class="eyebrow">Experience</p>
     <h2>Agency, in-house, and operator.</h2>
-    <div style="margin-top:32px">
-      <div class="role"><span class="yr">2025 &ndash; Present</span><div><h3>VP of GTM Operations</h3><span class="org">Rocketship</span><p>Lead operational optimization through AI automation and team training.</p></div></div>
-      <div class="role"><span class="yr">2023 &ndash; 2025</span><div><h3>VP of Growth</h3><span class="org">Rocketship</span><p>Pricing initiative added 9% ARR. Qualified lead volume up 15%.</p></div></div>
+    <div class="roles">
+      <div class="role"><span class="yr">2025 &ndash; Present</span><div><h3>VP of GTM Operations</h3><span class="org">Rocketship</span><p>AI automation and team training across operations.</p></div></div>
+      <div class="role"><span class="yr">2023 &ndash; 2025</span><div><h3>VP of Growth</h3><span class="org">Rocketship</span><p>Pricing, inbound lead generation, and HubSpot CRM enablement.</p></div></div>
       <div class="role"><span class="yr">2024 &ndash; Present</span><div><h3>Fractional Marketing Manager</h3><span class="org">Independent</span><p>Google Ads, SEO, email, and content for a portfolio of small businesses.</p></div></div>
       <div class="role"><span class="yr">2022 &ndash; 2023</span><div><h3>Senior Account Manager</h3><span class="org">KlientBoost</span><p>Performance marketing strategy, reporting, and QBRs for client accounts.</p></div></div>
-      <div class="role"><span class="yr">2021 &ndash; 2022</span><div><h3>Director of Growth Marketing</h3><span class="org">Rocketship</span><p>30+ paid accounts, $800K budget, 8:1 ROAS. Managed direct reports.</p></div></div>
-      <div class="role"><span class="yr">2017 &ndash; 2021</span><div><h3>Marketing &amp; Ecommerce Manager</h3><span class="org">Concordia Supply</span><p>$2.8M from paid search. Launched a new brand on Amazon to 1,000+ reviews.</p></div></div>
-      <div class="role"><span class="yr">2015 &ndash; 2017</span><div><h3>School Growth &amp; Marketing Administrator</h3><span class="org">Inspire Charter Schools</span><p>Enrollment from 500 to 13,000 students.</p></div></div>
+      <div class="role"><span class="yr">2021 &ndash; 2022</span><div><h3>Director of Growth Marketing</h3><span class="org">Rocketship</span><p>Paid media strategy and a team of direct reports.</p></div></div>
+      <div class="role"><span class="yr">2017 &ndash; 2021</span><div><h3>Marketing &amp; Ecommerce Manager</h3><span class="org">Concordia Supply</span><p>Paid search, email, and Amazon. Launched a new brand on Amazon to 1,000+ reviews.</p></div></div>
+      <div class="role"><span class="yr">2015 &ndash; 2017</span><div><h3>School Growth &amp; Marketing Administrator</h3><span class="org">Inspire Charter Schools</span><p>Built and ran the marketing function through rapid enrollment growth.</p></div></div>
       <div class="role"><span class="yr">2015</span><div><h3>BA, Communications</h3><span class="org">Pepperdine University</span></div></div>
     </div>
   </div>
@@ -244,8 +266,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <div class="fitbox">
       <p class="eyebrow" style="color:var(--cyan)">What I'm looking for</p>
       <h2>A Director or VP of Marketing role where marketing owns a revenue number.</h2>
-      <p style="max-width:620px;margin:0 0 36px">Full-time and remote. I'm a fit for companies that need one leader to set strategy, build the team, and prove the return.</p>
-      <div class="grid g2" style="gap:36px">
+      <p class="lede">Full-time and remote. I'm a fit for companies that need one leader to set strategy, build the team, and prove the return. I still run a small fractional practice, so I stay close to the actual work.</p>
+      <div class="grid g2" style="gap:30px">
         <div>
           <h3>Where I specialize</h3>
           <ul class="tags">
@@ -271,7 +293,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <h2>Hiring a marketing leader?</h2>
     <p>Let's talk about what you need to hit next year's number. Resume and references on request.</p>
     <div class="btns">
-      <a class="btn primary" href="mailto:scottpmiller9@gmail.com">Email me <span class="arr">&rsaquo;</span></a>
+      <a class="btn primary" href="mailto:scottpmiller9@gmail.com?subject=Marketing%20leadership%20role">Email me <span class="arr">&rsaquo;</span></a>
       <a class="btn line" href="https://www.linkedin.com/in/scottpatrickmiller/" target="_blank" rel="noopener">LinkedIn <span class="arr">&rsaquo;</span></a>
     </div>
   </div>
@@ -281,5 +303,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   <div class="wrap"><span>&copy; 2026 Scott Miller</span><span>Southern California &middot; Remote</span></div>
 </footer>
 
+<script>
+(function(){var n=document.getElementById('nav');function s(){n.classList.toggle('solid',window.scrollY>40)}s();window.addEventListener('scroll',s,{passive:true})})();
+</script>
 </body>
 </html>
