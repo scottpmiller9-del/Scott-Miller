@@ -150,6 +150,26 @@ h2{font-size:clamp(28px,3.8vw,40px);line-height:1.12;font-weight:700;max-width:7
 .stack{margin-top:40px}
 .stack h3{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:10px}
 
+/* testimonials */
+.thead{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.thead h2{margin-bottom:0}
+.tctl{display:flex;gap:8px}
+.tbtn{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--navy);font:600 20px/1 Inter,sans-serif;cursor:pointer;display:grid;place-items:center;transition:border-color .15s,opacity .15s}
+.tbtn:hover:not(:disabled){border-color:var(--navy)}
+.tbtn:disabled{opacity:.35;cursor:default}
+.tbtn:focus-visible,.ttrack:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:12px}
+.ttrack{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 22px;margin-top:28px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.ttrack::-webkit-scrollbar{display:none}
+.tcard{flex:0 0 88%;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+@media(min-width:700px){.tcard{flex-basis:calc((100% - 20px)/2)}}
+@media(min-width:1000px){.tcard{flex-basis:calc((100% - 40px)/3)}}
+.tcard .rel{font:600 12px/1.3 Inter,sans-serif;color:var(--brand);text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px}
+.tcard blockquote{margin:0;flex:1;color:var(--navy);font-size:16.5px;line-height:1.6}
+.tcard .who{margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+.tcard .who b{display:block;color:var(--navy);font-size:15.5px}
+.tcard .who span{display:block;color:var(--muted);font-size:14px;line-height:1.4;margin-top:2px}
+.tnote{margin-top:4px;font-size:14.5px;color:var(--muted)}
+
 /* hero headshot */
 .herogrid{display:grid;gap:24px;align-items:center}
 .heroimg{margin:0;order:-1}
@@ -365,6 +385,70 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   </div>
 </section>
 
+<section class="soft" id="recommendations">
+  <div class="wrap">
+    <div class="thead">
+      <div>
+        <p class="eyebrow">Recommendations</p>
+        <h2>In their words.</h2>
+      </div>
+      <div class="tctl">
+        <button class="tbtn" id="tPrev" type="button" aria-label="Previous recommendation">&lsaquo;</button>
+        <button class="tbtn" id="tNext" type="button" aria-label="Next recommendation">&rsaquo;</button>
+      </div>
+    </div>
+    <p class="tnote">From recommendations on my <a href="https://www.linkedin.com/in/scottpatrickmiller/" target="_blank" rel="noopener">LinkedIn profile</a>.</p>
+
+    <div class="ttrack" id="tTrack" role="region" aria-roledescription="carousel" aria-label="Recommendations from colleagues and clients" tabindex="0">
+      <article class="tcard">
+        <span class="rel">Managed me directly</span>
+        <blockquote>&ldquo;Scott Miller's unique skillset is unmatched. He was able to take our struggling organization in a short period of time and create value for not only my team but also our organization.&rdquo;</blockquote>
+        <div class="who"><b>Sam Stiles</b><span>Demand Gen</span></div>
+      </article>
+      <article class="tcard">
+        <span class="rel">Senior to me at KlientBoost</span>
+        <blockquote>&ldquo;Scott acted as a fractional CMO for clients of all sizes, and his customer service skills were top-notch.&rdquo;</blockquote>
+        <div class="who"><b>Tyler Mabery</b><span>Sr. Director of Digital Experience, LaserAway</span></div>
+      </article>
+      <article class="tcard">
+        <span class="rel">Reported to me directly</span>
+        <blockquote>&ldquo;Scott was an incredible leader to work under during my time at Rocketship. He has a rare talent for balancing big-picture growth strategy with day-to-day client needs, and he consistently created an environment where everyone on the team felt supported and challenged.&rdquo;</blockquote>
+        <div class="who"><b>Tyler Zastrow</b><span>Senior Revenue Operations Analyst</span></div>
+      </article>
+      <article class="tcard">
+        <span class="rel">Client</span>
+        <blockquote>&ldquo;He is not afraid to challenge the status quo and goes above and beyond for his customers.&rdquo;</blockquote>
+        <div class="who"><b>Charmaine Waddell</b><span>Partner/CMO, Typing Agent &amp; Yeti Academy</span></div>
+      </article>
+      <article class="tcard">
+        <span class="rel">Client</span>
+        <blockquote>&ldquo;Scott is endlessly client-focused, detail oriented, and an amazing strategic partner. &hellip; Scott has a great eye for marketing strategy, and I highly recommend working with him.&rdquo;</blockquote>
+        <div class="who"><b>Spencer Kelty</b><span>AI &amp; Cybersecurity Product Marketing Leader</span></div>
+      </article>
+      <article class="tcard">
+        <span class="rel">Client, HubSpot</span>
+        <blockquote>&ldquo;Working with Scott was a great experience. He was always quick, efficient, and a pleasure to communicate with. &hellip; We partnered with Scott for both implementation as well as one on one training of HubSpot.&rdquo;</blockquote>
+        <div class="who"><b>Colleen Gray</b><span>Information Systems and Business Leader</span></div>
+      </article>
+      <article class="tcard">
+        <span class="rel">Worked on the same team</span>
+        <blockquote>&ldquo;When Scott is involved everyone is aligned on the goal, the right things get done and the needle moves.&rdquo;</blockquote>
+        <div class="who"><b>Tony Lael</b></div>
+      </article>
+      <article class="tcard">
+        <span class="rel">Worked on the same team</span>
+        <blockquote>&ldquo;Scott's a fantastic teammate and strategist. From technical details on google to paid social he was stellar at guiding teams to hit client goals quarter to quarter.&rdquo;</blockquote>
+        <div class="who"><b>Matt Martinez</b><span>Head of Growth, Unbox</span></div>
+      </article>
+      <article class="tcard">
+        <span class="rel">Client at KlientBoost</span>
+        <blockquote>&ldquo;While a lot of agencies can become complacent, Scott remained proactive in suggesting ways to consistently grow.&rdquo;</blockquote>
+        <div class="who"><b>Dusty Schroeder</b><span>Co-Founder, Cowork Health</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section id="fit">
   <div class="wrap">
     <div class="fitbox">
@@ -424,6 +508,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
 <script>
 (function(){var n=document.getElementById('nav');function s(){n.classList.toggle('solid',window.scrollY>40)}s();window.addEventListener('scroll',s,{passive:true})})();
+(function(){var t=document.getElementById('tTrack'),p=document.getElementById('tPrev'),n=document.getElementById('tNext');if(!t||!p||!n)return;
+var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+function step(){var c=t.querySelector('.tcard');return c?c.getBoundingClientRect().width+20:300}
+function go(d){t.scrollBy({left:d*step(),behavior:rm?'auto':'smooth'})}
+function upd(){p.disabled=t.scrollLeft<4;n.disabled=t.scrollLeft+t.clientWidth>=t.scrollWidth-4}
+p.addEventListener('click',function(){go(-1)});n.addEventListener('click',function(){go(1)});
+t.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);upd()})();
 </script>
 </body>
 </html>
