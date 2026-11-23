@@ -150,6 +150,24 @@ h2{font-size:clamp(28px,3.8vw,40px);line-height:1.12;font-weight:700;max-width:7
 .stack{margin-top:40px}
 .stack h3{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:10px}
 
+/* hero headshot */
+.herogrid{display:grid;gap:24px;align-items:center}
+.heroimg{margin:0;order:-1}
+.heroimg img{display:block;width:96px;height:96px;border-radius:50%;object-fit:cover;object-position:50% 22%;border:3px solid rgba(255,255,255,.7);box-shadow:var(--shadow-lg)}
+@media(min-width:900px){
+  .herogrid{grid-template-columns:1fr 300px;gap:56px}
+  .heroimg{order:0;justify-self:end}
+  .heroimg img{width:300px;height:380px;border-radius:24px;border:0}
+}
+
+/* about */
+.about{display:grid;gap:32px;margin-top:28px;align-items:center}
+.photos{margin:0;max-width:420px}
+.photos img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:16px;box-shadow:var(--shadow-lg);background:var(--line)}
+.aboutcopy p{max-width:460px;margin-bottom:14px}
+.aboutcopy p:last-child{margin-bottom:0}
+@media(min-width:860px){.about{grid-template-columns:380px 1fr;gap:56px}}
+
 /* cta */
 .cta{text-align:center}
 .cta h2{margin:0 auto 12px}
@@ -170,6 +188,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       <a href="#ai">AI workflows</a>
       <a href="#experience">Experience</a>
       <a href="#fit">What I'm looking for</a>
+      <a href="#about">About</a>
       <a href="https://www.linkedin.com/in/scottpatrickmiller/" target="_blank" rel="noopener">LinkedIn</a>
       <a class="pill" href="#contact">Contact</a>
     </div>
@@ -178,12 +197,17 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
 <header class="hero" id="top">
   <div class="wrap">
-    <p class="eyebrow">Marketing Executive &middot; Growth, Paid Media, GTM, AI</p>
-    <h1>Marketing that shows up in revenue.</h1>
-    <p class="bio">I'm Scott Miller, VP of GTM Operations at Rocketship. I help growing companies turn marketing spend into pipeline, sales, and ARR, and I show the math. AI is built into how I work, every day. 10+ years across agency, in-house, and my own fractional practice.</p>
-    <div class="btns">
-      <a class="btn primary" href="#contact">Start a conversation <span class="arr">&rsaquo;</span></a>
-      <a class="btn ghost" href="#wins">See results <span class="arr">&rsaquo;</span></a>
+    <div class="herogrid">
+      <div class="herotext">
+        <p class="eyebrow">Marketing Executive &middot; Growth, Paid Media, GTM, AI</p>
+        <h1>Marketing that shows up in revenue.</h1>
+        <p class="bio">I'm Scott Miller, VP of GTM Operations at Rocketship. I help growing companies turn marketing spend into pipeline, sales, and ARR, and I show the math. AI is built into how I work, every day. 10+ years across agency, in-house, and my own fractional practice.</p>
+        <div class="btns">
+          <a class="btn primary" href="#contact">Start a conversation <span class="arr">&rsaquo;</span></a>
+          <a class="btn ghost" href="#wins">See results <span class="arr">&rsaquo;</span></a>
+        </div>
+      </div>
+      <figure class="heroimg"><img src="images/scott-headshot.jpg" width="788" height="1400" alt="Scott Miller smiling in a tan polo at sunset, water behind him"></figure>
     </div>
   </div>
 </header>
@@ -363,6 +387,21 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
             <li>Manufacturing</li><li>Ecommerce</li><li>Education</li>
           </ul>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="soft" id="about">
+  <div class="wrap">
+    <p class="eyebrow">About</p>
+    <h2>Outside of work.</h2>
+    <div class="about">
+      <figure class="photos"><img src="images/scott-family.jpg" width="1000" height="1333" loading="lazy" alt="Scott with his family in front of their home on Halloween, dressed as Star Wars characters"></figure>
+      <div class="aboutcopy">
+        <p>I'm a husband and a dad. I've been married for 10 years, and we have three kids.</p>
+        <p>I love Chipotle and I love John Mayer. No notes on either.</p>
+        <p>If you want to talk marketing or music, I'm in.</p>
       </div>
     </div>
   </div>
